@@ -17,7 +17,7 @@ export default function Header({ ...props }: Props) {
             className={`${props.className} flex justify-center items-center py-[22px] sm:py-5 bg-white-a700 shadow-sm relative`}
         >
             <div className="container-xs flex items-center justify-between gap-5 md:flex-col md:px-5">
-                <Img src="images/img_header_logo_34x164.png" alt="Headerlogo" className="h-[34px] w-[164px] object-contain" />
+                <Img src="images/logo.png" alt="Headerlogo" className="h-[34px] w-[164px] object-contain" />
                 <ul className="flex items-center gap-[34px] sm:flex-col">
                     <li
                         onMouseLeave={() => setMenuOpen(false)}

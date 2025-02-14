@@ -9,6 +9,7 @@ import InstagramSignin from "pages/InstagramSignin";
 import FacebookFeed from "pages/FacebookFeed";
 import Followers from "pages/Followers";
 import UserAccount from "pages/UserAccount";
+import EcoConnectFeedPage from "./pages/EcoConnectFeedPage";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -35,6 +36,9 @@ const ProjectRoutes = () => {
         {
             path: "useraccount", element: <UserAccount />,
         },
+        {
+            path: "feedPage", element: <EcoConnectFeedPage />,
+        }
     ]);
     return element;
 

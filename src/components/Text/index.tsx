@@ -2,6 +2,10 @@ import React from "react";
 
 const sizes = {
     textxs: "text-[12px] font-normal",
+    textsm: "text-[14px] font-normal",
+    textmd: "text-[16px] font-normal",
+    textlg: "text-[18px] font-normal",
+    textxl: "text-[20px] font-normal",
 };
 
 export type TextProps = Partial<{

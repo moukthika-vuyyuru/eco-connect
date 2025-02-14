@@ -1,48 +1,54 @@
-import { Button, Text, Heading, Img } from "./..";
+import { Text, Heading, Img, Button } from "./..";
 import React from "react";
 
 interface Props {
     className?: string;
     profileImage?: string;
     userName?: React.ReactNode;
-    userLocation?: React.ReactNode;
-    lastActiveTime?: React.ReactNode;
-    followButtonText?: string;
+    userHandle?: React.ReactNode;
+    postContent?: React.ReactNode;
+    commentCount?: React.ReactNode;
+    likeCount?: React.ReactNode;
 }
 
 export default function UserProfileCard({
-                                            profileImage = "images/img_profileimg_large_50x50.png",
+                                            profileImage = "public/images/logo.png",
                                             userName = "Rose J. Henry",
-                                            userLocation = "New York",
-                                            lastActiveTime = "20 min ago",
-                                            followButtonText = "Follow",
+                                            userHandle = "@rosejhenry",
+                                            postContent = "This is a sample post content.",
+                                            commentCount = "0",
+                                            likeCount = "0",
                                             ...props
                                         }: Props) {
     return (
         <div
             {...props}
-            className={`${props.className} flex sm:flex-col justify-center items-center w-full p-2.5 border-blue_gray-50 border border-solid bg-white-a700 rounded-md`}
+            className={`${props.className} flex flex-col p-4 border-blue_gray-50 border border-solid bg-white-a700 rounded-md w-[1000px]`} // Increased width
         >
-            <div className="flex flex-1 items-center justify-center gap-4 sm:self-stretch">
-                <Img src={profileImage} alt="Rose Jhenry" className="h-[50px] rounded-[24px] object-cover" />
-                <div className="flex flex-1 flex-col items-start justify-center">
+            <div className="flex items-start gap-4">
+                <Img src={profileImage} alt="Profile Image" className="h-[70px] w-[70px] rounded-full object-cover" />
+                <div className="flex flex-col">
                     <Heading as="h6" className="text-[16px] font-semibold">
-                        {userName}
+                        {userName} {userHandle}
                     </Heading>
-                    <div className="flex items-center self-stretch">
-                        <Text as="p" className="text-[12px] font-normal !text-blue_gray-400_01">
-                            {userLocation}
-                        </Text>
-                        <div className="ml-2 h-[4px] w-[4px] rounded-sm bg-blue_gray-400_01" />
-                        <Text as="p" className="ml-2 text-[12px] font-normal !text-blue_gray-400_01">
-                            {lastActiveTime}
-                        </Text>
-                    </div>
+                    <Text as="p" className="mt-2 text-[18px] font-normal !text-gray-800">
+                        {postContent}
+                    </Text>
                 </div>
             </div>
-            <Button size="lg" shape="round" className="min-w-[78px] rounded-md px-[18px] font-medium">
-                {followButtonText}
-            </Button>
+            <div className="flex items-center justify-between mt-2">
+                <Button variant="fill" color="gray_900_02" size="md" className="rounded-[14px] px-4 font-bold">
+                    Comment
+                </Button>
+                <div className="flex items-center gap-2">
+                    <Text as="p" className="text-[14px] font-normal !text-blue_gray-600">
+                        {commentCount} Comments
+                    </Text>
+                    <Text as="p" className="text-[14px] font-normal !text-blue_gray-600">
+                        {likeCount} Likes
+                    </Text>
+                </div>
+            </div>
         </div>
     );
 }

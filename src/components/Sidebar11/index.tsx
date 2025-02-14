@@ -16,7 +16,7 @@ export default function Sidebar11({ ...props }: Props) {
         >
             <div className="flex items-center justify-between gap-5 self-stretch">
                 <Img src="images/img_arrow_left_24x24.svg" alt="Arrowleft" className="h-[24px]" />
-                <Img src="images/img_header_logo_34x164.png" alt="Headerlogo" className="h-[20px] w-[76px] self-end object-contain" />
+                <Img src="images/logo.png" alt="Headerlogo" className="h-[20px] w-[76px] self-end object-contain" />
                 <Img src="images/img_share_alt_outline.svg" alt="Sharealt" className="h-[24px]" />
             </div>
             <div className="mb-[592px] flex flex-col gap-8 self-stretch">

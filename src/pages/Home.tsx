@@ -47,6 +47,11 @@ const Home = () => {
                         UserAccount
                     </Link>
                 </li>
+                <li style={{ marginBottom: "10px" }}>
+                    <Link to="/feedPage" style={{ color: "#87CEFA", textDecoration: "none" }}>
+                        TwitterFeed
+                    </Link>
+                </li>
             </ul>
         </div>
     );
