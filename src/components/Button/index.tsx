@@ -55,7 +55,7 @@ const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
                                                                     shape,
                                                                     variant = "fill",
                                                                     size = "sm",
-                                                                    color = "blue_A700_01",
+                                                                    color = "[#1D3016]",
                                                                     ...restProps
                                                                 }) => {
     return (

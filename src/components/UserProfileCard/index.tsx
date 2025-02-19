@@ -23,7 +23,7 @@ export default function UserProfileCard({
     return (
         <div
             {...props}
-            className={`${props.className} flex flex-col p-4 border-blue_gray-50 border border-solid bg-white-a700 rounded-md w-[1000px]`} // Increased width
+            className={`${props.className} flex flex-col p-4 border-[#1D3016] border border-solid bg-white-a700 rounded-md w-[1000px]`} // Increased width
         >
             <div className="flex items-start gap-4">
                 <Img src={profileImage} alt="Profile Image" className="h-[70px] w-[70px] rounded-full object-cover" />

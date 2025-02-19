@@ -14,7 +14,7 @@ export default function UserAccountPage() {
                 <meta name="description" content="Web site created using create-react-app" />
             </Helmet>
             <div className="flex w-full bg-gray-50">
-                <Sidebar1 />
+                <Sidebar1 profilePictureUrl={"images/logo.png"} />
                 <div className="flex w-[58%] flex-col gap-[30px] px-[30px] py-8 sm:p-5">
                     <header>
                         <div className="flex items-center justify-between gap-5">

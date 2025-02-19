@@ -33,8 +33,8 @@ const Home = () => {
                     </Link>
                 </li>
                 <li style={{ marginBottom: "10px" }}>
-                    <Link to="/facebookfeed" style={{ color: "#87CEFA", textDecoration: "none" }}>
-                        FacebookFeed
+                    <Link to="/marketplace" style={{ color: "#87CEFA", textDecoration: "none" }}>
+                        MarketPlace
                     </Link>
                 </li>
                 <li style={{ marginBottom: "10px" }}>
@@ -50,6 +50,11 @@ const Home = () => {
                 <li style={{ marginBottom: "10px" }}>
                     <Link to="/feedPage" style={{ color: "#87CEFA", textDecoration: "none" }}>
                         TwitterFeed
+                    </Link>
+                </li>
+                <li style={{ marginBottom: "10px" }}>
+                    <Link to="/events" style={{ color: "#87CEFA", textDecoration: "none" }}>
+                        Events
                     </Link>
                 </li>
             </ul>

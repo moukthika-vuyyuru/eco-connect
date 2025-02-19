@@ -29,7 +29,7 @@ export default function UserProfile({
                         {mutualFriendsText}
                     </Text>
                 </div>
-                <Img src="images/img_ellipsis_h_outline.svg" alt="Ellipsis" className="h-[24px]" />
+                {/*<Img src="images/img_ellipsis_h_outline.svg" alt="Ellipsis" className="h-[24px]" />*/}
             </div>
         </div>
     );
